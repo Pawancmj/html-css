@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job application</title>
+    <style>
+         body{
+             background-color: #ccc;
+         }
+         *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+         }
+         .container{
+             max-width: 900px;
+             margin: 0px auto;
+         }
+         .apply_box{
+             max-width: 600px;
+             padding: 0px;
+             background-color: white;
+             margin: 0px auto;
+             margin-top: 40px;
+             box-shadow: 4px 3px 5px rgba(1,1,1,0.1);
+             border-radius: 10px;
+         }
+         .title_small{
+             font-size: 17px;
+         }
+         .form_container{
+             display: grid;
+             grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+             gap: 10px;
+         }
+         .form_control{
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            padding: 4px; 
+         }
+         .job_role{
+             margin: 5px;
+             padding: 8px;
+           
+         }
+         label{
+             font-size: 12px;
+             margin: 3px;
+         }
+         .button_container{
+            margin: 7px;
+             padding: 5px;
+          
+         }
+
+         input,select,textarea{
+             padding: 6px 10px;
+             font-size: 10px;
+             border: 1px solid #ccc;
+             border-radius: 6px;
+         }
+        input:focus{
+            color: blue;
+        }
+        .button_container{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 25px;
+        }
+
+        button{
+            background-color: red;
+            color: blue;
+            border: transparent solid 2px;
+            border-radius: 6px;
+            transition: 0.3s ease-in;
+        }
+    button:hover{
+        background-color: #ccc;
+        color: black;
+        transition: 0.3s ease-out;
+        cursor: pointer;
+
+    }
+ 
+             
+    </style>
+</head>
+<body>
+     <div class="container">
+         <div class="apply_box">
+             <h1>job application
+                 <span class="title_small">(web)</span>
+             </h1>
+            
+                 <div class="form_container">
+                     <div class="form_control">
+                         <label for="first_name">first_name</label>
+                         <input type="text" id="first_name"  name="first_name" placeholder="enter first name..."/>
+                     </div>
+                     <div class="form_control">
+                        <label for="middle_name">middle_name</label>
+                        <input type="text"  id="middle_name"  name="middle_name" placeholder="enter middle name..."/>
+                    </div>
+                    <div class="form_control">
+                        <label for="last_name">last_name</label>
+                        <input type="text" id="last_name"  name="last_name" placeholder="enter last name..."/>
+                    </div>     
+                        <div class="form_control">
+                        <label for="email">Email</label>
+                        <input type="text" id="email"  name="email" placeholder="enter email..."/>
+                    </div>
+                </div>     
+                <div class="job_role">
+                <label for="email">job role</label>
+                <select id="job_role" name="job_role">
+                    <option value="">select job role</option>
+                        <option value="front_end">front end devloper</option>
+                        <option value="back_end">back end devloper</option>
+                        <option value="full_stack">full stack devloper</option>
+                        <option value="UI UX">UI UX devloper</option>
+                </select>
+            </div>
+            <div class="form_control">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter address..."></textarea>
+            </div>
+            <div class="form_control">
+                <label for="city">city</label>
+                <input type="text" id="city"  name="city" placeholder="enter your city..."/>
+            </div>
+            <div class="form_control">
+                <label for="pin_code">pin code</label>
+                <input type="number" id="pin_code"  name="pin_code" placeholder="enter your pincode..."/>
+            </div>
+            <div class="form_control">
+                <label for="date">Date</label>
+                <input type="date" id="date"  name="date" />
+            </div>
+            <div class="form_control">
+                <label for="upload">Upload Your C.V.</label>
+                <input type="file" id="upload"  name="upload" />
+            </div>
+            <div class="button_container">
+                <button type="submit">Apply Now</button>
+                 </div>
+               
+             </form>
+        
+     </div>
+</body>
+</html>
